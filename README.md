@@ -1,1 +1,1 @@
-# aa_rails
+# app_academy_rails
