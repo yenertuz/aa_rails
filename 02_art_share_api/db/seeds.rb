@@ -8,8 +8,6 @@
 
 users = User.create([
 	{username: "yenertuz"},
-	{username: "aniqaelahi"},
-	{username: "ianlove"},
-	{username: "leohernandez"}
+	{username: "aniqaelahi"}
 ])
 
