@@ -1,7 +1,7 @@
 class ArtworkShare < ApplicationRecord
 
 	validates_presence_of :artwork_id, :viewer_id
-	validates_uniqueness_of :artwokr_id, scope: :viewer_id
+	validates_uniqueness_of :artwork_id, scope: :viewer_id
 
 	belongs_to :artwork,
 		primary_key: :id,

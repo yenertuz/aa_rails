@@ -11,3 +11,17 @@ users = User.create([
 	{username: "aniqaelahi"}
 ])
 
+artworks = Artwork.create([
+	{artist_id: User.first.id, title: "Mona Lisa", image_url: "www.monalisa.com" },
+	{artist_id: User.first.id, title: "The Scream", image_url: "www.thescream.com"},
+	{artist_id: User.last.id, title: "The Last Supper", image_url: "www.thelastsupper.com"},
+	{artist_id: User.last.id, title: "Friends", image_url: "www.friends.com"}
+])
+
+artwork_shares = ArtworkShare.create([
+	{viewer_id: User.last.id, artwork_id: Artwork.find(1)},
+	{viewer_id: User.last.id, artwork_id: Artwork.find(2)},
+	{viewer_id: User.first.id, artwork_id: Artwork.find(3)},
+	{viewer_id: User.first.id, artwork_id: Artwork.find(4)}
+])
+
